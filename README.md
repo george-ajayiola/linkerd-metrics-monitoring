@@ -73,6 +73,7 @@ To scrape **Linkerd** metrics, you'll need to modify the Prometheus configuratio
         metrics_path: /metrics
         static_configs:
           - targets: ['linkerd-proxy:4191']
+    ...
     ```
 The running configuration of the builtin prometheus can be used as a reference.
 ```
@@ -161,3 +162,7 @@ After installation, you can access Grafana locally:
 
 - Make sure to replace namespace placeholders as needed.
 - Ensure proper access and security policies are in place when deploying to production.
+
+# References
+- [Network Monitoring with the Linkerd Service Mesh](https://buoyant.io/blog/network-monitoring-with-the-linkerd-service-mesh)
+- [Bringing your own Prometheus](https://linkerd.io/2.12/tasks/external-prometheus/)
