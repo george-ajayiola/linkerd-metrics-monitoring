@@ -115,7 +115,7 @@ To visualize the metrics, you can install **Grafana** and configure it to use Pr
             access: proxy
             isDefault: true
     ```
- If you are accessing Grafana directly at http://localhost:3000, then the root_url in the `values.yaml` should not contain /grafana/. It should simply be /. Here’s how to fix it:
+ If you are accessing Grafana directly at http://localhost:3000, then the root_url in the `values.yaml` should not contain /grafana/. It should simply be /.
 
 Correct root_url Setting
 Update your grafana.ini configuration to reflect the correct URL. If you are accessing Grafana at http://localhost:3000, the correct root_url should look like this:
