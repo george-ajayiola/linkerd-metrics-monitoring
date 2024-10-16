@@ -7,8 +7,8 @@ data:
   allow-snippet-annotations: "false"
   prometheus.yml: |
     global:
-      evaluation_interval: 10s
-      scrape_interval: 10s
+      evaluation_interval: 1m
+      scrape_interval: 1m
       scrape_timeout: 10s
     rule_files:
     - /etc/config/recording_rules.yml
@@ -424,7 +424,7 @@ metadata:
   annotations:
     meta.helm.sh/release-name: prometheus
     meta.helm.sh/release-namespace: monitoring
-  creationTimestamp: "2024-10-14T22:54:31Z"
+  creationTimestamp: "2024-10-16T11:05:01Z"
   labels:
     app.kubernetes.io/component: server
     app.kubernetes.io/instance: prometheus
@@ -435,5 +435,5 @@ metadata:
     helm.sh/chart: prometheus-25.27.0
   name: prometheus-server
   namespace: monitoring
-  resourceVersion: "33510"
-  uid: b7f9ad13-3cba-4a84-801d-bdecaf3afa1f
+  resourceVersion: "28088"
+  uid: c514ab4d-3b87-49f3-a816-593626e03fa5
